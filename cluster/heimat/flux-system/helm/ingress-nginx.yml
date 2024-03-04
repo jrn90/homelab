@@ -2,8 +2,8 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
-  name: caddy
-  namespace: flux-system
+  name: ingress-nginx
+  namespace: ingress-nginx
 spec:
   interval: 24h
-  url: https://caddyserver.github.io/ingress/
+  url: https://kubernetes.github.io/ingress-nginx
