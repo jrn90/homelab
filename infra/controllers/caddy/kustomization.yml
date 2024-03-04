@@ -4,4 +4,3 @@ namespace: caddy-system
 resources:
   - namespace.yml
   - release.yml
-  - repository.yml

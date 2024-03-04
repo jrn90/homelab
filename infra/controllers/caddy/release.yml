@@ -2,7 +2,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta2
 kind: HelmRelease
 metadata:
-  name: caddy-system
+  name: caddy
   namespace: caddy-system
 spec:
   interval: 30m
@@ -12,8 +12,8 @@ spec:
       version: "*"
       sourceRef:
         kind: HelmRepository
-        name: caddy-system
-        namespace: caddy-system
+        name: caddy
+        namespace: flux-system
       interval: 12h
   install:
     remediation:
