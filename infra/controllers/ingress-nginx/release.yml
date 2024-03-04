@@ -15,3 +15,6 @@ spec:
         name: ingress-nginx
         namespace: ingress-nginx
       interval: 12h
+  install:
+    remediation:
+      retries: 3
